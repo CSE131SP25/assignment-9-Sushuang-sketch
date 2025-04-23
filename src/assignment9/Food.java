@@ -13,14 +13,29 @@ public class Food {
 	 * Creates a new Food at a random location
 	 */
 	public Food() {
-		//FIXME
+		x=Math.random();
+        y=Math.random();
 	}
 	
 	/**
 	 * Draws the Food
 	 */
 	public void draw() {
-		//FIXME
+		StdDraw.setPenColor(Color.RED);
+        StdDraw.filledCircle(x, y, FOOD_SIZE);
 	}
+	
+	
+	//public void setPosition(double x, double y) {
+    //    this.x=x;
+    //    this.y=y;
+    //}
+	
+	public double getx() {
+        return x;
+    }
+	public double gety() {
+		return y;
+    }
 	
 }
